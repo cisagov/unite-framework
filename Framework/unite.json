@@ -1,0 +1,305 @@
+{
+    "unite_document": {
+        "unite_version": "v0.3",
+        "authored_by": "CISA-JCDC-MATT",
+        "uuid": "97a21794-76bf-4cbf-b505-96d24de11c43",
+        "date": "2025-12-05T00:00:00.000",
+        "description": "First test document of the UN!TE concept in JSON format."
+    },
+	"defensive_partners": [
+		{
+			"abbreviation": "THR",
+			"name": "threat intelligence provider",
+			"uuid": "12de6460-c543-4887-a02c-86ac5dc497c2",
+			"data_and_capabilities": "Full malware analysis.  Customer end-point and appliance data. Honeypots.  Customer account, email, etc. data. Customer network and end-point logs."
+		},
+		{
+			"abbreviation": "CSP",
+			"name": "cybersecurity service provider",
+			"uuid": "5dba7d59-9d0e-4881-a527-6153cdde00b3",
+			"data_and_capabilities": "Has insight into potential adversary activity, can secure multiple organizations through deployment of security controls, unique data sets for insight into threat activity."
+		},
+		{
+			"abbreviation": "ISP",
+			"name": "internet service provider",
+			"uuid": "60d70b5c-a1fc-4860-ae73-0e742d84af9c",
+			"data_and_capabilities": "Netflow. ACLs. IP ownership. Route advertisements. DNS records. Visibility and monitoring of potential adversary infrastructure, can provide IOCs, and take down adversary infrastructure if necessary."
+		},
+		{
+			"abbreviation": "CLO",
+			"name": "cloud infrastructure provider",
+			"uuid": "87df8148-3ef3-4de9-8b58-a182d4cb4168",
+			"data_and_capabilities": "Visibility and monitoring of potential adversary infrastructure, can provide IOCs, and take down adversary infrastructure if necessary."
+		},
+		{
+			"abbreviation": "DOM",
+			"name": "domain name registrars",
+			"uuid": "ae4b35c4-1edf-4b89-b77a-714199ac8826",
+			"data_and_capabilities": "Domain ownership logs. "
+		},
+		{
+			"abbreviation": "DNS",
+			"name": "DNS service provider",
+			"uuid": "17b42e50-7d54-4a24-9038-aee96a6ece93",
+			"data_and_capabilities": "DNS records. Route advertisements."
+		},
+		{
+			"abbreviation": "WEB",
+			"name": "web hosting provider",
+			"uuid": "7d8c4400-39bc-4a86-8dc3-bb3dbe80b426",
+			"data_and_capabilities": "Website analytics."
+		},
+		{
+			"abbreviation": "IT",
+			"name": "hardware or software vendor",
+			"uuid": "321d183c-2af1-4932-888d-dfd23867965a",
+			"data_and_capabilities": "Has insight into potential adversary activity, can secure multiple organizations through deployment of security controls, unique data sets for insight into threat activity."
+		},
+		{
+			"abbreviation": "ICS",
+			"name": "industrial control system vendor",
+			"uuid": "4138eb1d-7cae-47c1-9a76-f01059ec1551",
+			"data_and_capabilities": "Has insight into potential adversary activity, can secure multiple organizations through deployment of security controls, unique data sets for insight into threat activity."
+		},
+		{
+			"abbreviation": "SOC",
+			"name": "social media platform",
+			"uuid": "c9bbf9ea-9068-49d3-bc89-3d9a148e44dc",
+			"data_and_capabilities": ""
+		},
+		{
+			"abbreviation": "CERT",
+			"name": "national CSIRT",
+			"uuid": "27e5f8cc-c500-4ab2-bead-e9f9e55b3af4",
+			"data_and_capabilities": "Log data from national government networks. Data shared from industry partners.  National intelligence and law enforcement data. "
+		},
+		{
+			"abbreviation": "ISAO",
+			"name": "industry- or community-led sharing organization",
+			"uuid": "8812a0a8-40b4-4787-8732-3330d4fd6963",
+			"data_and_capabilities": "Unique data, reach, and trust into the center’s community of interest."
+		},
+		{
+			"abbreviation": "LAW",
+			"name": "national law enforcement",
+			"uuid": "397b6277-04c7-4974-b5d3-841097d67bac",
+			"data_and_capabilities": "Unique intellignece insights, coordinate and execute LE disruption operations, pursue investigations and prosecutions."
+		},
+		{
+			"abbreviation": "ENT",
+			"name": "mature enterprise network owner/operator",
+			"uuid": "3d836ecd-4516-455b-9c0e-8482e542e20d",
+			"data_and_capabilities": "On-the-ground detection, might be explicitly targeted by adversaries and can provide up-to-date/new IOCs helpful for other organizations to detect similar adversary activity."
+		},
+		{
+			"abbreviation": "SME",
+			"name": "small/under-resourced enterprise network owner/operator",
+			"uuid": "1790d8c8-72f8-45f5-9cd4-6ba72e269deb",
+			"data_and_capabilities": ""
+		},
+		{
+			"abbreviation": "MIL",
+			"name": "national military",
+			"uuid": "5a89382e-7a9c-4cc1-8b75-9b069f32e808",
+			"data_and_capabilities": "Insights from offensive operations and defense of military networks. Ability to conduct offensive disruption operations."
+		},
+		{
+			"abbreviation": "IC",
+			"name": "national intelligence community",
+			"uuid": "a205ba4a-a455-4d97-b1cf-a8971930561b",
+			"data_and_capabilities": "Has insight into past and present behaviors which could be indicative of future or on-going adversary activity. Can provide context into behavior and potential backing of adversary groups."
+		},
+		{
+			"abbreviation": "SSA",
+			"name": "sector-specific authority or regulator",
+			"uuid": "0533a5a6-cb54-428f-80ca-81c0500f47d3",
+			"data_and_capabilities": "Insights into specific critical infrastructure sectors. Can amplify mitigation activities. May have regulatory authority to drive defensive actions."
+		}
+	],
+	"techniques": [
+		{
+			"name": "Hunt",
+			"technique_id": "00001",
+			"uuid": "4105b056-7ea8-4cd9-8545-e818fe6bc68d",
+			"description": "Hunt for adversary activity.",
+			"output": [
+				"share sightings",
+				"share IOCs",
+				"join collaboration group"
+			]
+		},
+		{
+			"name": "Monitor",
+			"technique_id": "00002",
+			"uuid": "a7ae1cd8-4d6a-4482-b4e1-6e3b22a0806c",
+			"description": "Upon finding an active adversary, closely monitor and track until the appropriate time for mitigation.",
+			"output": []
+		},
+		{
+			"name": "Report",
+			"technique_id": "00003",
+			"uuid": "a342b4c6-a434-4380-9680-d2247dd44fa2",
+			"description": "Report sightings of the adversary to a designated coordinator.",
+			"output": [
+				"time",
+				"location",
+				"activity"
+			]
+		},
+		{
+			"name": "Mitigate",
+			"technique_id": "00004",
+			"uuid": "46462197-2d82-438f-84a2-573251bb1580",
+			"description": "Mitigate threat activity when detected.",
+			"output": []
+		},
+		{
+			"name": "Share",
+			"technique_id": "00005",
+			"uuid": "88efb4ad-1144-449b-ae4c-072dd9d5e566",
+			"description": "Share sightings and related indicators broadly or with a trusted group.",
+			"output": []
+		},
+		{
+			"name": "Prioritize",
+			"technique_id": "00006",
+			"uuid": "28cb5074-436f-4447-8f76-81c521a6c399",
+			"description": "Define and communicate priorities for defense.",
+			"output": []
+		},
+		{
+			"name": "Partner",
+			"technique_id": "00007",
+			"uuid": "0d79694b-e0c9-466f-b7fc-46afbbccccac",
+			"description": "Identify partners needed to achieve defensive priorities.",
+			"output": []
+		},
+		{
+			"name": "Assess",
+			"technique_id": "00008",
+			"uuid": "07a5bebb-0f40-4ada-a70d-400c9ee339c7",
+			"description": "Conduct risk assessment to identify gaps and opportunities for collaborative defense.",
+			"output": []
+		},
+		{
+			"name": "Plan",
+			"technique_id": "00009",
+			"uuid": "506ca82f-00fa-46e9-89f3-ce526dbba523",
+			"description": "Develop and update collaborative or enterprise response, operational, and strategic plans.",
+			"output": []
+		},
+		{
+			"name": "Form",
+			"technique_id": "00010",
+			"uuid": "615018ff-adf0-4e22-bea5-6b24b073cd2d",
+			"description": "Establish operational collaboration mechanisms.",
+			"output": []
+		},
+		{
+			"name": "Coordinate",
+			"technique_id": "00011",
+			"uuid": "f9e2a7b9-0da6-4114-8182-e3d329d4f935",
+			"description": "Coordinate operations among defensive partners.",
+			"output": []
+		},
+		{
+			"name": "Analyze",
+			"technique_id": "00012",
+			"uuid": "3c361190-f169-467b-8553-8e91cb2660f5",
+			"description": "Prioritize technical analysis.",
+			"output": []
+		},
+		{
+			"name": "Notify",
+			"technique_id": "00014",
+			"uuid": "cad499c7-00a9-427d-9daa-022e57855298",
+			"description": "Notify targets or victims of vulnerable systems or attempted/successful intrusions.",
+			"output": []
+		},
+		{
+			"name": "Alert",
+			"technique_id": "00015",
+			"uuid": "c354d9e2-8ef0-4ad4-b698-7a5efb5d330a",
+			"description": "Release a priority alert or analysis report.",
+			"output": []
+		},
+		{
+			"name": "Brief",
+			"technique_id": "00016",
+			"uuid": "7929e1de-bfae-4bc5-9957-f61f3e322941",
+			"description": "Provide briefings to industry and government leaders on the threat or incident.",
+			"output": []
+		},
+		{
+			"name": "Review",
+			"technique_id": "00017",
+			"uuid": "27914716-c330-4de2-a643-9d8724ec09df",
+			"description": "Conduct and share an after-action report and recommendations.",
+			"output": []
+		},
+		{
+			"name": "Deploy",
+			"technique_id": "00018",
+			"uuid": "85e6956e-2e3c-4b11-8625-94314235b25b",
+			"description": "Prioritize service deployment to targeted sectors, including incident response, hunt, assessment, or hardening services.",
+			"output": []
+		}
+	],
+	"playbooks": [
+		{
+			"unite_version": "v0.1",
+			"authored_by": "CISA-JCDC-MATT",
+			"name": "playbook-mockup-jan-2025-monitor-priority",
+			"uuid": "c4f5093f-95ab-41cb-b90a-e19431dc91ec",
+	        "date": "2025-12-05T00:00:00.000",
+			"coordinator": "CISA-JCDC",
+			"galaxy/campaign_name": "ABC Threat",
+			"galaxy/campaign_id": "23rfa8-asdf94-3292r9",
+			"description": "As part of a broader collaboration effort led by ABC-CERT, this playbook provides action pathways to partners to take further action on these specific IOC’s. This playbook is specifically for Cybersecurity Service Providers, Cloud Platform Providers, and enterprise IT vendors. At this stage of the defensive campaign, partners are being asked to monitor the threat and coordinate with the CERT before mitigating activity they see on their infrastructure. This playbook helps ensure that intelligence gain/loss considerations are weighed strategically before threats are mitigated at the tactical level.",
+			"defensive partners": [
+				"CSP",
+				"CLO",
+				"IT"
+			],
+			"collaboration_actions": [
+				{
+					"type": "hunt",
+					"sequence": 1,
+					"description": "First, hunt for these IOC’s on your infrastructure and available data sets.",
+					"misp objects": [
+						{
+							"name": "",
+							"identifier": "ioc-1",
+							"uuid": ""
+						},
+						{
+							"name": "",
+							"identifier": "ioc-2",
+							"uuid": ""
+						},
+						{
+							"name": "",
+							"identifier": "ioc-3",
+							"uuid": ""
+						}
+					]
+				},
+				{
+					"type": "report",
+					"sequence": 2,
+					"description": "Second, upon finding indications of the adversary, report the sighting to the CERT as quickly as possible. Through continued monitoring, your organization may be able to provide valuable intelligence that can help disrupt the threat actor in a strategic way. ",
+					"sighting outputs": [
+						"time",
+						"location",
+						"activity"
+					]
+				},
+				{
+					"type": "monitor",
+					"sequence": 3,
+					"description": "Third, continue to monitor the threat actor and report any new activity.  If the threat actor reaches a point where damage can occur, mitigate immediately."
+				}
+			]
+		}
+	]
+}
