@@ -27,6 +27,6 @@ Forthcoming.
 ### How is UN!TE Different than Other Frameworks?
 UN!TE focuses on actions that can be taken as a defensive team across multiple organizations.  It seeks to *leverage and be paired with* other existing frameworks like MITRE ATT&CK, STIX/TAXII, the Incident Command Structure, CSIRT Services Framework, and CACAO.
 ### Authors & Contributors
-[@m-grote](https://github.com/m-grote) 
-
 [@peterxsu](https://github.com/peterxsu)
+
+[@grotemr](https://github.com/grotemr) 
